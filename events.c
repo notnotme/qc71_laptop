@@ -44,8 +44,8 @@ static const struct key_entry qc71_wmi_hotkeys[] = {
 	{ KE_IGNORE, 0x15, { KEY_BRIGHTNESSDOWN }},
 
 	/* reported in automatic mode when rfkill state changes */
-	{ KE_SW,     0x1a, {.sw = { SW_RFKILL_ALL, 1 }}},
-	{ KE_SW,     0x1b, {.sw = { SW_RFKILL_ALL, 0 }}},
+	{ KE_KEY,     0x1a, { KEY_RFKILL }},
+	{ KE_KEY,     0x1b, { KEY_RFKILL }},
 
 	/* reported via keyboard controller */
 	{ KE_IGNORE, 0x35, { KEY_MUTE }},
